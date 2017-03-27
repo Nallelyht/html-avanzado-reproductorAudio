@@ -29,3 +29,8 @@ function stop(){
     miAudio.currentTime=0;
     miAudio.pause();
 }
+miAudio.ontimeupdate = function() {
+   var rango = document.getElementById("rango");
+   rango.value = miAudio.currentTime;
+
+};
