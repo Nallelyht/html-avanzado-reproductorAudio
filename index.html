@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <title>Reproductor</title>
+        <link rel="shortcut icon" type="image/x" href="assets/favicon/favicon.ico">
+    </head>
+    <body>
+        <section>
+            <button id="atrasar" onclick="atrasar(10)">Retroceder</button>
+            <button id="reproducir" onclick="reproducir()">Reproducir</button>
+            <button id="stop" onclick="stop()">Stop</button>
+            <button id="adelantar" onclick="adelantar(10)">Adelantar</button>
+            <button id="volumenA" onclick="volumenAlto()">Subir Volumen</button>
+            <button id="volumenB" onclick="volumenBajo()">Bajar Volumen</button>
+            <audio id="audioMP3">
+            <source src="assets/audio/reproducir.mp3" type="audio/mpeg">
+            </audio>
+        </section>
+        <script src="assets/js/main.js">
+        </script>
+    </body>
+</html>
