@@ -2,19 +2,26 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
-        <title>Reproductor</title>
+        <title>The Rolling Stones</title>
         <link rel="shortcut icon" type="image/x" href="assets/favicon/favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     </head>
-    <body>
-        <section>
-            <button id="atrasar" onclick="atrasar(10)">Retroceder</button>
-            <button id="reproducir" onclick="reproducir()">Reproducir</button>
-            <button id="stop" onclick="stop()">Stop</button>
-            <button id="adelantar" onclick="adelantar(10)">Adelantar</button>
-            <button id="volumenA" onclick="volumenAlto()">Subir Volumen</button>
-            <button id="volumenB" onclick="volumenBajo()">Bajar Volumen</button>
+    <body bgcolor="black">
+        <hr style="height: 150px; visibility: hidden">
+        <section align="center">
+            <img src="http://www.evolveandascend.com/wp-content/uploads/2015/12/static1.squarespace-76.jpg">
+        </section>
+                <section align="center" vertical-align="center">
+            <button id="atrasar" onclick="atrasar(10)"><i class="material-icons">fast_rewind</i></button>
+            <button id="reproducir" onclick="reproducir()"><i class="material-icons">play_arrow</i></button>
+            <button id="pausa" onclick="pausa()"><i class="material-icons">pause</i></button>
+            <button id="stop" onclick="stop()"><i class="material-icons">stop</i></button>
+            <button id="adelantar" onclick="adelantar(10)"><i class="material-icons">fast_forward</i></button>
+            <button id="volumenA" onclick="volumenAlto()"><i class="material-icons">volume_up</i></button>
+            <button id="volumenB" onclick="volumenBajo()"><i class="material-icons">volume_down</i></button>
+            <button id="silencio" onclick="silencio()"><i class="material-icons">volume_off</i></button>
             <audio id="audioMP3">
-            <source src="assets/audio/reproducir.mp3" type="audio/mpeg">
+                <source src="assets/audio/reproducir.mp3" type="audio/mpeg">
             </audio>
             <section id="progreso">
                 <input type="range" min="0" max="437" step="0.1" value="0.5" id="rango"/>
